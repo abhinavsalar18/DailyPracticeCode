@@ -1,5 +1,7 @@
-class Solution {
-    public boolean isPalindrome(int x) {
+import java.util.Scanner;
+import java.lang.*;
+public class Main {
+    public static boolean isPalindrome(int x) {
         String str = Integer.toString(x);
         //String temp = str;
         boolean res = true;
