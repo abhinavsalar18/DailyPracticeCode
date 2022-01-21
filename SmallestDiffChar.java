@@ -11,7 +11,7 @@ class  SmallestDiffChar{
           //  System.out.println(mid);
             if(letters[mid] - target > 0 )
             { 
-             if(mid == 0 || letters[mid-1] - target <= 0)
+             if(mid == 0 || letters[mid-1] - target <= 0)  //  if mid becomes 0 then this is the required postion
              {
                 indx = mid;
                 break;
@@ -26,7 +26,7 @@ class  SmallestDiffChar{
 
          }
         //System.out.println(indx);
-        if(indx == -1 && start == len)
+        if(indx == -1 && start == len)  //wrapped case; if start goes to last means this is the 
             indx = 0;
         
         return letters[indx];
